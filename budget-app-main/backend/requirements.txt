@@ -1,0 +1,31 @@
+Django==5.2.7
+djangorestframework==3.16.1
+djangorestframework-simplejwt==5.5.1
+django-cors-headers==4.9.0
+Pillow==12.0.0
+
+# Database - PostgreSQL (required for production)
+# psycopg2-binary może nie działać z Python 3.13, użyj psycopg (psycopg3)
+psycopg[binary]>=3.1.0
+dj-database-url==2.1.0
+
+# Stripe integration
+# Zaktualizowano do najnowszej wersji aby naprawić błąd "'NoneType' object has no attribute 'Secret'"
+# Wersja 7.8.0 jest yanked (usunięta) i ma błędy - wymuszamy najnowszą stabilną wersję
+# Render może mieć cache, więc używamy konkretnej wersji zamiast >=
+stripe==13.0.1
+
+# Email
+sendgrid==6.10.0
+python-dotenv==1.0.0
+
+# Google OAuth
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+
+# Development tools
+django-extensions==3.2.3
+
+# Production deployment
+gunicorn==21.2.0

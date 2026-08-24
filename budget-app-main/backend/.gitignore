@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+/media/
+
+# Environment variables
+.env
+.env.local
+.env.production
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files (opcjonalne - usuń jeśli chcesz commitować testy)
+test_email.py
+test_sendgrid*.py
+
+# Dokumentacja pomocnicza (nie commitować)
+DEPLOYMENT_CHECKLIST.md
+DEPLOYMENT_FAQ.md
+DEPLOY_NOW.md
+SETUP_ALERTS_SCHEDULER.md
+SETUP_SENDGRID.md
+DEPLOYMENT.md
+SETUP_STRIPE.md
+STRIPE_SETUP.md
+setup_sendgrid.ps1
+PROJECT_STATUS.md
+
